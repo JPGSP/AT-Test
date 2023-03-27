@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    A web page
+{% endblock %}
+
+{% block body %}
+    <h1><div>Product Search</div></h1>
+
+    <!-- Do a form ! -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                {{ form_start(searchForm) }}
+                    {{ form_widget(searchForm) }}
+                    <button type="submit" class="btn btn-primary">Send</button>
+                {{ form_end(searchForm) }}
+            </div>
+        </div>
+
+        {% if dataApi is not empty %}
+        <div class="row">
+            <div class="col-xs-12">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th class="col-3">Image</th>
+                        <th class="col-6">Title</th>
+                        <th class="col-3">Destination</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for data in dataApi %}
+                        <tr>
+                            <td class="col-3" style ="word-break:break-all;
+">
+                                <img src="{{ data.getImage() }}" class="img-thumbnail">
+                            </td>
+                            <td class="col-6" style ="word-break:break-all;
+">{{ data.getTitle() }}</td>
+                            <td class="col-3" style ="word-break:break-all;
+">{{ data.getDestination() }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+{% endblock %}
