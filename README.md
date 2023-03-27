@@ -86,7 +86,7 @@ to search the products by title.
 The state of the form is very limited. At the moment you can only search for products which are based in UK.
 It does not matter the number of times you search for the same item, you will always will have the same results and the same number (10).
 
-The products API gives you the possibility to search in different locations, establish a different limit of items you want to get e.g. pagination. ....
+The products API gives you the possibility to search in different locations, establish a different limit of items you want to get, pagination. ....
 
 All this features could be easily done, extending the search form.
 
