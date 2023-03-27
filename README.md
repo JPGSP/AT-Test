@@ -1,6 +1,6 @@
 # AT-Test
 
-This prooject will show you a form, where you can search by title inside product's data by a third party provider.
+This project will show you a form where you can search by title inside product's data by a third party provider.
 
 ## System requirements
 
@@ -36,7 +36,7 @@ Go to your project folder:
 cd /path/to/projects/folder/at-test
 ```
 
-Write the follow command:
+Write the following command:
 
 ```bash
 make up
@@ -50,7 +50,7 @@ Go to your project folder:
 cd /path/to/projects/folder/at-test
 ```
 
-Write the follow command:
+Write the following command:
 
 ```bash
 composer install
@@ -61,7 +61,7 @@ Once the previous command is finished
 symfony serve -d
 ```
 
-(!) Carefull
+(!) Careful
 
 If you play to much with the two previous options (symfony and/or docker version), it can happen that there is a port's conflict.
 To fix this issue, you will need to use the following command:
@@ -86,7 +86,7 @@ to search the products by title.
 The state of the form is very limited. At the moment you can only search for products which are based in UK.
 It does not matter the number of times you search for the same item, you will always will have the same results and the same number (10).
 
-The products API gives you the possibility to search in different locations, establish a different limit of items you want to get, pagination. ....
+The products API gives you the possibility to search in different locations, establish a different limit of items you want to get e.g. pagination. ....
 
 All this features could be easily done, extending the search form.
 
